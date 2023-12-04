@@ -1,0 +1,72 @@
+/* App.css */
+
+body {
+  margin: 200;
+  padding: 500;
+}
+
+.App {
+  text-align: center;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 10px; /* Piksel değeri ekleyin */
+  right: 10px; /* Piksel değeri ekleyin */
+  width: 300px; /* İsteğe bağlı olarak genişliği ayarlayın */
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  justify-content: center; /* İsteğe bağlı olarak dikey hizalamayı ayarlayın */
+  align-items: center; /* İsteğe bağlı olarak yatay hizalamayı ayarlayın */
+  color: rgb(31, 2, 2); /* İsteğe bağlı olarak metin rengini ayarlayın */
+  z-index: 1000; /* İsteğe bağlı olarak z-index ekleyin */
+}
+
+.modal-icerik {
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.modal-kapat {
+  position: absolute;
+  top: 10px;
+  right: 14px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.modal.acik {
+  display: block;
+  /* Diğer stil özellikleri (görünür hale getirmek için) */
+}
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  padding: 0px;
+  color: white;
+}
+
+.main {
+  padding: 50px;
+}
+
+/* Harita stilini ayarlamak için örnek kurallar */
+.leaflet-container {
+  height: 860px; /* Harita yüksekliğini istediğiniz değere ayarlayın */
+  width: 100%; /* Harita genişliğini istediğiniz değere ayarlayın */
+  border: 1px solid #ddd; /* Opsiyonel: Harita kenarlığı ekleyebilirsiniz */
+}
+
+/* Minimap stilini ayarlamak için örnek kurallar */
+.leaflet-control.leaflet-bar {
+  background-color: transparent;
+}
+
+
+/* Daha fazla özel stil ekleyebilir ve uygun gördüğünüz değişiklikleri yapabilirsiniz */
